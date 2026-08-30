@@ -313,6 +313,10 @@ pattern path {
   stroke-dasharray: none;
 }
 
+.track.occupied {
+  stroke: var(--red);
+}
+
 .occupiedTrack {
   stroke: var(--red);
   stroke-width: 4;
@@ -378,6 +382,10 @@ pattern path {
 
 .train.blue { color: var(--blue); }
 .train.green { color: var(--green); }
+
+.train.held {
+  opacity: 0.78;
+}
 
 .train .speed {
   fill: white;
