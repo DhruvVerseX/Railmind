@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RailMind AI</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<header class="header">
+
+<div class="logo">
+
+🚆 RailMind AI
+
+</div>
+
+<div class="system-status">
+
+🟢 System Online
+
+</div>
+
+</header>
+
+<section class="stats">
+
+    <div class="card">
+
+        <div class="card-title">🚆 Running</div>
+
+        <div class="card-number">12</div>
+
+        <div class="card-footer">Active Trains</div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="card-title">⏱ Delayed</div>
+
+        <div class="card-number">2</div>
+
+        <div class="card-footer">Awaiting Clearance</div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="card-title">⚠ Conflict</div>
+
+        <div class="card-number">1</div>
+
+        <div class="card-footer">Needs Decision</div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="card-title">📈 Throughput</div>
+
+        <div class="card-number">95%</div>
+
+        <div class="card-footer">Network Efficiency</div>
+
+    </div>
+
+</section>
+  <section class="railway-map">
+
+    <div class="map-header">
+
+        <h2>🚆 Live Railway Network</h2>
+
+        <span>Section : New Delhi → Ghaziabad</span>
+
+    </div>
+
+    <div class="map-area" id="map-container">
+
+    <svg
+        id="railway-svg"
+        viewBox="0 0 1100 750">
+
+    </svg>
+
+</div>
+
+    <div class="legend">
+
+        <span>⚪ Station</span>
+
+        <span>🔶 Junction</span>
+
+        <span>🟢 Signal Clear</span>
+
+        <span>🔴 Signal Stop</span>
+
+        <span>🚆 Train</span>
+
+    </div>
+
+</section>
+
+<section class="bottom">
+
+    <div class="ai-panel">
+
+    <h2>🤖 AI Decision Engine</h2>
+
+    <p id="aiDecisionText">Waiting...</p>
+
+</div>
+
+   <div class="event-log">
+
+    <h2>📜 Live Event Log</h2>
+
+    <ul id="eventList">
+
+    </ul>
+
+</div>
+
+</section>
+
+<section class="controls">
+
+    <button id="startBtn" class="start">
+    ▶ Start
+</button>
+
+    <button id="pauseBtn" class="pause">
+    ⏸ Pause
+</button>
+
+    <button id="resetViewBtn" class="reset">⟳ Reset View</button>
+
+    <button class="delay">⚡ Inject Delay</button>
+
+    <button class="failure">🚨 Signal Failure</button>
+
+</section>
+
+</div>
+<script src="js/data.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/events.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/simulation.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

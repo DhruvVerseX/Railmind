@@ -1,0 +1,323 @@
+/* ==========================
+   RailMind AI Theme
+========================== */
+
+:root{
+
+    --bg:#0D1117;
+    --card:#161B22;
+    --border:#30363D;
+
+    --blue:#2388FF;
+    --green:#2ECC71;
+    --yellow:#F39C12;
+    --red:#E74C3C;
+
+    --text:#FFFFFF;
+    --text2:#8B949E;
+
+}
+
+/* ==========================
+   Reset
+========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    padding:30px;
+
+}
+/* ==========================
+   Dashboard
+========================== */
+
+.dashboard{
+
+    display:grid;
+
+    gap:25px;
+
+}
+
+/* ==========================
+   Header
+========================== */
+
+.header{
+
+    display:grid;
+
+    grid-template-columns:1fr auto;
+
+    align-items:center;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+
+    padding:20px 30px;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.system-status{
+
+    color:var(--green);
+
+    font-weight:600;
+
+}
+/* ==========================
+   KPI Cards
+========================== */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+
+    padding:22px;
+
+    transition:0.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--blue);
+
+}
+
+.card-title{
+
+    color:var(--text2);
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+}
+
+.card-number{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.card-footer{
+
+    color:var(--green);
+
+    font-size:14px;
+
+}
+/* ==========================
+   Bottom Section
+========================== */
+
+.bottom{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+.ai-panel,
+.event-log{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+
+    padding:20px;
+
+    min-height:220px;
+
+}
+/* ==========================
+   Controls
+========================== */
+
+.controls{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:15px;
+
+}
+
+.controls button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    color:white;
+
+}
+
+.start{
+
+    background:#1E8E3E;
+
+}
+
+.pause{
+
+    background:#C58B00;
+
+}
+
+.reset{
+
+    background:#1E64D6;
+
+}
+
+.delay{
+
+    background:#7B3FE4;
+
+}
+
+.failure{
+
+    background:#C62828;
+
+}
+
+.controls button:hover{
+
+    transform:translateY(-4px);
+
+}
+/* ==========================
+   Railway Map
+========================== */
+
+.railway-map{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:25px;
+
+}
+
+.map-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.map-header span{
+
+    color:var(--text2);
+
+}
+
+.map-area{
+
+    background:#11161D;
+
+    border-radius:12px;
+
+    height:420px;
+
+    overflow:hidden;
+
+    border:1px solid var(--border);
+
+}
+
+#railway-svg{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.legend{
+
+    display:flex;
+
+    gap:25px;
+
+    justify-content:center;
+
+    margin-top:20px;
+
+    color:var(--text2);
+
+    font-size:14px;
+
+}

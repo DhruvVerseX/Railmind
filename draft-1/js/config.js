@@ -1,0 +1,9 @@
+const CONFIG = {
+
+    TRAIN_SPEED: 0.003,
+
+    CONFLICT_DISTANCE: 0.25
+
+};
+
+window.CONFIG = CONFIG;
