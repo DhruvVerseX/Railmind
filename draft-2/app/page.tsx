@@ -1,7 +1,7 @@
 "use client";
 
-import { useRailMindSimulation } from "../js/main";
-import { Controls, DecisionPanel, Header, RailwayMap, StatsGrid } from "../js/renderer";
+import { useRailMindSimulation } from "../core/main";
+import { Controls, DecisionPanel, Header, RailwayMap, StatsGrid } from "../core/renderer";
 
 export default function Home() {
   const simulation = useRailMindSimulation();
